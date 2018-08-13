@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view style="background-color:#F8F8F8;">
   <view  class="weui-cell ">
-       <image class="weui-cell__hd" style="width: 176px; height: 100px; " src="{{news_pic}}" bindtap="tappics"></image>
+       <image class="weui-cell__hd" style="width: 176px; height: 100px;  " src="{{news_pic}}" bindtap="tappics"></image>
      <view class="weui-cells__title" style="width: {{news_width}}px; height: 100px; ">{{news_text}}</view>
   </view>
   <view>

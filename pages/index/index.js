@@ -159,9 +159,7 @@ Page({
     var that = this
     var width = 0
     var heigth = 0
-wx.setTopBarText({
-  text: 'top text',
-})
+
     wx.getSystemInfo({
       success: function (res) {
         width = res.windowWidth
