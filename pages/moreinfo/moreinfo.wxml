@@ -1,0 +1,17 @@
+<!--pages/moreinfo/moreinfo.wxml-->
+<image src="{{url}}" mode='aspectFit'  style="width: {{width}}px; height:{{width*0.75}}px; "></image>
+
+<view class="page__title">{{name}}</view>
+<view class="page__title"  wx:if="{{fail}}">航天器资料加载失败，请稍后重试！</view>
+<view wx:for="{{text}}" wx:if="{{text}}" wx:key='text'>
+<view class="weui-article__h1" wx:if="{{item=='Alternate Names'}}">@{{item}}</view>
+<view class="weui-article__h1" wx:elif="{{item=='Facts in Brief'}}">@{{item}}</view>
+<view class="weui-article__h1" wx:elif="{{item=='Funding Agency'}}">@{{item}}</view>
+<view class="weui-article__h1" wx:elif="{{item=='Discipline'}}">@{{item}}</view>
+<view class="weui-article__h1" wx:elif="{{item=='Discription:'}}">@{{item}}</view>
+<view class="weui-article__p" wx:else>{{item}}</view>
+</view>
+<view wx:if="{{text}}">
+<view class="weui-cells__title">图片来源https://space.skyrocket.de</view>
+<view class="weui-cells__title">航天器信息来源http://nssdc.gsfc.nasa.gov</view>
+</view>

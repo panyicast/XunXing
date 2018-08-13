@@ -1,0 +1,25 @@
+<!--searchresult.wxml-->
+<image src="../../img/diablo.png" mode='aspectFit' wx:if="{{diablo}}"></image>
+<image src="../../img/666.png" mode='aspectFit' wx:if="{{six}}"></image>
+<view class="weui-media-box weui-media-box_appmsg" wx:if="{{name.length>0}}">
+  <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+    <image class="weui-media-box__thumb" bindtap="addFavorite" src="{{icon}}" />
+  </view>
+
+  <button open-type="share" class="share_button">
+    <image class="share_img" bindtap="addFavorite" src="../../img/share.png" />分享
+  </button>
+
+  <view class="weui-media-box__bd weui-media-box__bd_in-appmsg" bindtap='tapinfo' hover-class='green_hover'>
+    <view class="weui-media-box__title">{{name}}</view>
+    <view class="weui-media-box__desc">{{id}}</view>
+  </view>
+  
+</view>
+<view class="weui-media-box__desc">点击航天器名称查看航天器简介↑</view>
+<view wx:if="{{name.length>0}}">
+  <textarea value="{{para}}" maxlength="400" disabled style="height:390px" />
+  <view class="weui-cells__title" bindtap="refreshtap" loading="true">当前时刻±1小时的星下点轨迹(点我刷新)</view>
+  <canvas canvas-id="myCanvas"  style="border: 1px solid;width:750rpx;height:375rpx;"/>
+</view>
+

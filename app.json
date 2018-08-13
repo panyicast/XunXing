@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/searchlist/searchlist",
+    "pages/searchresult/searchresult",
+    "pages/favorite/favorite",
+    "pages/note/note",
+    "pages/test",
+    "pages/moreinfo/moreinfo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "询星",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#ff4a4a",
+    "borderStyle": "white",
+    "backgroundColor": "#F0F0F0",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/s.png",
+        "selectedIconPath": "img/s.png"
+      },
+      {
+        "pagePath": "pages/searchlist/searchlist",
+        "text": "列表",
+        "iconPath": "img/list.png",
+        "selectedIconPath": "img/list.png"
+      },
+      {
+        "pagePath": "pages/searchresult/searchresult",
+        "text": "结果",
+        "iconPath": "img/Round.png",
+        "selectedIconPath": "img/Round.png"
+      },
+      {
+        "pagePath": "pages/favorite/favorite",
+        "text": "收藏",
+        "iconPath": "img/favorites.png",
+        "selectedIconPath": "img/favorites.png"
+      }
+    ]
+  }
+}

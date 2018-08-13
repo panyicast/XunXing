@@ -1,0 +1,43 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+.placeholder{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #EBEBEB;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #2f00ff;
+}
+
+.share_button{
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px;
+  border-color: rgba(255, 255, 255, 0);
+  right: 50rpx;
+  width: 130rpx;
+  top: 40rpx;
+  height: 130rpx;
+  position: fixed;
+}
+
+.share_button::after{
+  border: 0;
+}
+
+.share_img{
+  border: 0px;
+  z-index: 9999;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.green_hover{
+  color: red;
+}

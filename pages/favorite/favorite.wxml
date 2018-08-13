@@ -1,0 +1,15 @@
+<!--pages/favorite.wxml-->
+<view class="weui-cells__title">已收藏的航天器列表</view>
+<view class="sat-param" wx:for="{{list}}" wx:key="list">
+  <view class="weui-cells weui-cells_after-title" hover="true" hover-class="green_hover">
+    <view class="weui-cell" >
+      <view class="weui-cell__bd" data-msg="{{item}}" bindtap="bindtap" >
+        <view>{{item.name}}</view>
+        <view style="font-size: 13px;color: #888888;">{{item.id}}</view>
+      </view>
+      <view class="weui-cell__ft">
+        <icon type="cancel" size="23" data-msg="{{index}}" bindtap="bindcancel"></icon>
+      </view>
+    </view>
+  </view>
+</view>

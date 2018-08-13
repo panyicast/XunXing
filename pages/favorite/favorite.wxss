@@ -1,0 +1,4 @@
+/* pages/favorite.wxss */
+.green_hover{
+  background-color: green;
+}

@@ -1,0 +1,19 @@
+<!--logs.wxml
+<view class="sat-param" wx:for="{{logs}}">
+  <view data-id="{{item}}" bindtap="bindtap">{{item}}</view>
+</view>
+-->
+<view class="weui-cells__title">符合查询条件的航天器列表：</view>
+<view class="sat-param" wx:for="{{list}}" wx:key="list">
+  <view class="weui-cells weui-cells_after-title"  >
+    <view class="weui-cell" data-id="{{item}}" bindtap="bindtap" hover="true" hover-class="green_hover">
+      <view class="weui-cell__bd">
+        <view>{{item.name}}</view>
+        <view style="font-size: 13px;color: #888888;">{{item.id}}</view>
+      </view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </view>
+  </view>
+</view>
+
+        
